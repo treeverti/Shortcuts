@@ -26,7 +26,7 @@ export function Insert({doesImport, setQueryValue}) {
     }
 
     function createQueryValue(value){
-        setQueryValue("INSERT "+fieldName+"<br />VALUE "+value+";");
+        setQueryValue("INSERT INTO "+tableName+"("+fieldName+")<br />VALUE "+value+";");
     };
 
     return (
